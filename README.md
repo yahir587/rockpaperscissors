@@ -25,8 +25,8 @@ In this unit, coders will create a Rock, Paper, Scissors game. The Rock, Paper, 
 
 ### Day 1 Goal 2: Capture user input and display it to the screen
 
-- [ ] Add a click handler that saves the value of the user's input to a variable
-- [ ] Display the user input value on the screen, in the user choice location
+- [x] Add a click handler that saves the value of the user's input to a variable
+- [x] Display the user input value on the screen, in the user choice location
 
 #### Wrap
 
