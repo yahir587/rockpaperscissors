@@ -2,11 +2,11 @@ let randomNumber = 0;
 let computerChoice;
 let result;
 
-$(".play").click(function() {
+$(".play").click(function () {
   let userChoice = $("input").val();
   $(".userChoice").text(userChoice);
   let randomNumber = Math.random();
-  
+console.log(randomNumber);
   if (randomNumber === 1) {
     computerChoice = "rock";
     $(".computerChoice").text("rock");
@@ -20,7 +20,8 @@ $(".play").click(function() {
     $(".computerChoice").text("scissors");
     let computer = "scissors";
   }
-  $(".computerChoice").text(randomNumber);
+  console.log("Hello world");
+  $(".computerChoice").text(computerChoice);
   if (userChoice === "rock" && computerChoice === "rock") {
     result = "it is a tie";
   } else if (userChoice === "paper" && computerChoice === "rock") {
@@ -40,5 +41,6 @@ $(".play").click(function() {
   } else if (userChoice === "rock" && computerChoice === "scissors") {
     result = "You win ";
   }
+ 
   $(".result").text(result);
 });
